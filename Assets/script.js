@@ -1,7 +1,8 @@
 function time() {
 
+  // Used class sessions for this code
   $("#currentDay").html(moment().format("dddd, MMMM Do" ));
-
+  // Used to pull the hour by number in HTML: https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/ and class activity for if and else as well as adding the class and removing the class
   var current = moment().format("k");
   for (var i = 0; i < schArray.length; i++) {
       schArray[i].removeClass("past present future");
@@ -19,6 +20,7 @@ function time() {
   }
 }
 
+// Idea for the way to list and write multiple var: https://stackoverflow.com/questions/694102/declaring-multiple-variables-in-javascript
 var sch9 = $("#9AM"), 
 sch10 = $("#10AM"), 
 sch11 = $("#11AM"), 
@@ -33,10 +35,12 @@ var schArray = [
   sch9, sch10, sch11, sch12, sch13, sch14, sch15, sch16, sch17,
 ];
 
+// Code to setInterval: https://javascript.info/settimeout-setinterval
 pullLocalStorage();
 time();
 setInterval(time, 1000); 
 
+// Idea for using for...of: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 function pullLocalStorage() {
   for (const element of schArray) {
       element.val(localStorage.getItem("timeBlock " + element.data("hour")));
@@ -44,7 +48,7 @@ function pullLocalStorage() {
   }
 }
 
-
+// From class activity
 function handleFormSubmit(event) {
   event.preventDefault();
 
