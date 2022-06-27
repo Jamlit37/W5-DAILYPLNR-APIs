@@ -8,3 +8,5 @@ Used mostly the week's VS Code to get snippets on moment.js and Bootstrap in ord
 Live website URL: https://jamlit37.github.io/W5-DAILYPLNR-APIs/
 
 GitHub Repo URL: https://github.com/Jamlit37/W5-DAILYPLNR-APIs
+
+Screenshot of working planner: https://user-images.githubusercontent.com/104121180/175863743-8d6fbdd1-5059-43b5-af70-cb7aa2675e92.PNG
