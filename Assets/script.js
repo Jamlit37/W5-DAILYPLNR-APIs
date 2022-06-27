@@ -35,10 +35,7 @@ var schArray = [
   sch9, sch10, sch11, sch12, sch13, sch14, sch15, sch16, sch17,
 ];
 
-// Code to setInterval: https://javascript.info/settimeout-setinterval
-pullLocalStorage();
-time();
-setInterval(time, 1000); 
+
 
 // Idea for using for...of: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 function pullLocalStorage() {
@@ -48,7 +45,7 @@ function pullLocalStorage() {
   }
 }
 
-// From class activity
+// From class activity and sibling selector found through: https://api.jquery.com/siblings/
 function handleFormSubmit(event) {
   event.preventDefault();
 
@@ -57,6 +54,10 @@ function handleFormSubmit(event) {
 
   localStorage.setItem("timeBlock " +  targetTimeBlock, targetText.val());
 }
+// Code to setInterval: https://javascript.info/settimeout-setinterval
+pullLocalStorage();
+time();
+setInterval(time, 1000); 
 
 var saveBtn = $(".saveBtn");
 saveBtn.on("click", handleFormSubmit);
