@@ -1,1 +1,6 @@
 # W5-DAILYPLNR-APIs
+Here is a daily planner which goes from 9AM-5PM. Colours of grey indicator past time, green is future and red is present. Updating clock ticks over every second so the website knows what time colour to display. 
+
+Had fun with this application and the provided CSS and HTML really helped in indicating which classes I needed to add in order to get this planner working and looking the same as the GIF provided. 
+
+Used mostly the week's VS Code to get snippets on moment.js and Bootstrap in order to copmplete this task.
